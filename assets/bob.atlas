@@ -1,0 +1,104 @@
+
+bob.png
+size: 1024, 256
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+attack
+  rotate: false
+  xy: 134, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 1
+attack
+  rotate: false
+  xy: 530, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 0
+stand
+  rotate: false
+  xy: 398, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 2
+stand
+  rotate: false
+  xy: 662, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 4
+stand
+  rotate: false
+  xy: 662, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 1
+walk
+  rotate: false
+  xy: 2, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 1
+stand
+  rotate: false
+  xy: 2, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 0
+walk
+  rotate: false
+  xy: 68, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 6
+walk
+  rotate: false
+  xy: 200, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 3
+walk
+  rotate: false
+  xy: 266, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 0
+walk
+  rotate: false
+  xy: 332, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 5
+walk
+  rotate: false
+  xy: 464, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 2
+walk
+  rotate: false
+  xy: 596, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 7
+walk
+  rotate: false
+  xy: 728, 44
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 4
