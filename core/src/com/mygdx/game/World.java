@@ -36,7 +36,6 @@ public class World {
         this.character = character;
     }
 
-
     public void update(OrthoCamera camera)
     {
         stateTime += Gdx.graphics.getDeltaTime();
@@ -66,9 +65,6 @@ public class World {
         sb.setProjectionMatrix(camera.combined);
     }
 
-
-
-
     private void loadLevel(String id) {
 
         mapContainer.loadTiledMap(id);
@@ -77,7 +73,6 @@ public class World {
 
         character = new Character(new AnimationWrapper(ResourceManager.getInstance().getTextureAtlas("player")) , mapContainer.getCollisionLayer());
         character.setPosition(levelManager.getHeroPositionX(id), levelManager.getHeroPositionY(id));
-
 
     }
 
