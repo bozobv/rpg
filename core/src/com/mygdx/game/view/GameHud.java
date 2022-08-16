@@ -53,9 +53,8 @@ public class GameHud {
         camera = new OrthoCamera();
         InputController.getInstance().addInputProcessor(stage);
 
-
     }
-
+    
     public void update(OrthoCamera gameCamera) {
         camera.update();
         stage.act(Gdx.graphics.getDeltaTime());
@@ -72,18 +71,16 @@ public class GameHud {
                 world.attackPressed();
             else if (skill1Btn.isPressed(touchX,touchY))
                 world.skill1Pressed();
-
-
         }
     }
 
+    
     public void render(OrthoCamera gameCamera) {
 
         sb.setProjectionMatrix(camera.combined);
         sb.begin();
 
         ResourceManager.getInstance().getFont("font").draw(sb, "FPS: " + Gdx.graphics.getFramesPerSecond(), Settings.getWidth() - 60, Settings.getHeight() - 60);
-
 
         attackBtn.render(sb);
         skill1Btn.render(sb);
@@ -109,8 +106,6 @@ public class GameHud {
             camera.setPosition(camera.position.x + tp.getKnobPercentX() * 10, camera.position.y + tp.getKnobPercentY() * 10 );
         }
     }
-
-
 
     public void resume() {
         InputController.getInstance().addInputProcessor(stage);
