@@ -25,8 +25,6 @@ public class MapContainer {
         collisionLayer = (TiledMapTileLayer) tiledMap.getLayers().get(1);
         bgObjectsLayer = (TiledMapTileLayer) tiledMap.getLayers().get(2);
         frontLayer = (TiledMapTileLayer) tiledMap.getLayers().get(3);
-
-
     }
 
     public MapContainer() {
@@ -44,8 +42,6 @@ public class MapContainer {
         tiledMapRenderer.renderTileLayer(frontLayer);
 
         sb.end();
-
-
     }
 
     public void renderBack( OrthoCamera camera ) {
