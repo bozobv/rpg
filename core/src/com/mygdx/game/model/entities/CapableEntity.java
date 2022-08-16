@@ -14,8 +14,7 @@ public abstract class CapableEntity extends Entity{
     TiledMapTileLayer collisionLayer;
 
 
-    CapableEntity(AnimationWrapper ac, TiledMapTileLayer collisionLayer)
-    {
+    CapableEntity(AnimationWrapper ac, TiledMapTileLayer collisionLayer) {
         this.collisionLayer = collisionLayer;
         prevX = posX;
         prevY = posY;
@@ -40,15 +39,13 @@ public abstract class CapableEntity extends Entity{
 
     }
 
-    public void setCollisionLayer(TiledMapTileLayer collisionLayer)
-    {
+    public void setCollisionLayer(TiledMapTileLayer collisionLayer) {
         this.collisionLayer = collisionLayer;
         increment = collisionLayer.getTileWidth();
         increment = width < increment ? width / 2 : increment / 2;
     }
 
-    public void render(SpriteBatch sb, float stateTime)
-    {
+    public void render(SpriteBatch sb, float stateTime) {
         if ( prevX == posX)
             animationWrapper.renderStand(sb,stateTime,posX, posY);
         else if( prevX < posX)
@@ -66,7 +63,6 @@ public abstract class CapableEntity extends Entity{
     }*/
 
     public void move(float moveXPercent, float moveYPercent) {
-
 
         float oldX = posX, oldY = posY;
 
@@ -162,20 +158,17 @@ public abstract class CapableEntity extends Entity{
         }
     }
 
-
     protected int getDam(){
         return strength;
     }
 
-    protected boolean checkDead()
-    {
+    protected boolean checkDead(){
         if (health <= 0)
             return true;
         return false;
     }
 
-    protected void die()
-    {
+    protected void die(){
         this.posX = 0;
         this.posY = 0;
     }
