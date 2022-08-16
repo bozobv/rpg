@@ -163,7 +163,6 @@ public abstract class CapableEntity extends Entity{
     }
 
 
-
     protected int getDam(){
         return strength;
     }
@@ -177,6 +176,7 @@ public abstract class CapableEntity extends Entity{
 
     protected void die()
     {
-        super.die();
+        this.posX = 0;
+        this.posY = 0;
     }
 }
