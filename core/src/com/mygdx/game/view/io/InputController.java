@@ -50,11 +50,7 @@ public class InputController implements GestureDetector.GestureListener {
 		listeners.clear();
 	}
 
-	/**
-	 * Singleton method that returns the single instance of the class.
-	 *
-	 * @return The single class instance
-	 */
+	//singleton
 	public static InputController getInstance() {
 		return instance;
 	}
