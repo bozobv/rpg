@@ -19,7 +19,6 @@ public class World {
     float stateTime;
 
     public World() {
-
         levelManager = new LevelManager();
         mapContainer = new MapContainer();
         entityManager = new EntityManager();
@@ -27,28 +26,23 @@ public class World {
         loadLevel("firstLevel");
 
         stateTime = 0f;
-
     }
 
     public World(Character character) {
-
         this();
         this.character = character;
     }
 
-    public void update(OrthoCamera camera)
-    {
+    public void update(OrthoCamera camera){
         stateTime += Gdx.graphics.getDeltaTime();
         entityManager.update(character.getPosX(), character.getPosY());
     }
 
-    public void moveUpdate(float knobPercentX, float knobPercentY)
-    {
+    public void moveUpdate(float knobPercentX, float knobPercentY){
         character.move(knobPercentX, knobPercentY);
     }
 
-    public void render(SpriteBatch sb, OrthoCamera camera)
-    {
+    public void render(SpriteBatch sb, OrthoCamera camera){
 
         update(camera);
 
@@ -66,14 +60,12 @@ public class World {
     }
 
     private void loadLevel(String id) {
-
         mapContainer.loadTiledMap(id);
 
         entityManager.load(mapContainer,levelManager, id);
 
         character = new Character(new AnimationWrapper(ResourceManager.getInstance().getTextureAtlas("player")) , mapContainer.getCollisionLayer());
         character.setPosition(levelManager.getHeroPositionX(id), levelManager.getHeroPositionY(id));
-
     }
 
     public void attackPressed() {
@@ -82,6 +74,5 @@ public class World {
 
     public void skill1Pressed() {
         System.out.println("skillpressed");
-
     }
 }
