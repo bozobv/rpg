@@ -82,7 +82,7 @@ public class GameHud {
         sb.setProjectionMatrix(camera.combined);
         sb.begin();
 
-        ResourceManager.getInstance().getFont("font").draw(sb, "FPS: " + Gdx.graphics.getFramesPerSecond(), Settings.getWidth() -60, Settings.getHeight() - 60);
+        ResourceManager.getInstance().getFont("font").draw(sb, "FPS: " + Gdx.graphics.getFramesPerSecond(), Settings.getWidth() - 60, Settings.getHeight() - 60);
 
 
         attackBtn.render(sb);
