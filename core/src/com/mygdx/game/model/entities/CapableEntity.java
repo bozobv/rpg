@@ -177,6 +177,6 @@ public abstract class CapableEntity extends Entity{
 
     protected void die()
     {
-        posX = 20000000;
+        super.die();
     }
 }
