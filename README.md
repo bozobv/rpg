@@ -1,7 +1,7 @@
 # rpg
 RPG game development for Android platform using libGDX framework
 
-thesis work
+thesis work in RPG-jatek-fejlesztese-Android-platformra-Dolgozat-5.pdf
 
 
 Nowadays, the mobile phone has taken the lead in the video game market over the other platforms. Role-playing games dominate among the highest-income genres. The question arises as to why this is the case, as well as the need to develop a similarly popular role-playing game.
